@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.logo span {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: black;
+  bottom: -4px;
+  left: 0;
+}
+
+.btn-contacto {
+  background: black;
+  color: white !important;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+}
+
+.social a {
+  color: black;
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+}

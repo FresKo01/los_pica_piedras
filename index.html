@@ -6,6 +6,8 @@
   <title>Los Picapiedras</title>
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+  <link rel="icon" type="image/svg+xml" href="assets/icons/logo_main.svg">
 </head>
 <body>
   <header class="navbar">
@@ -30,8 +32,38 @@
       </div>
     </div>
   </header>
+  <!-- HERO SWIPER -->
+<section class="hero-swiper">
+  <div class="swiper swiper-home">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="assets/swiper/los-picapiedras-01.jpg" alt="Imagen 1"></div>
+      <div class="swiper-slide"><img src="assets/swiper/los-picapiedras-02.jpg" alt="Imagen 2"></div>
+      <div class="swiper-slide"><img src="assets/swiper/los-picapiedras-03.jpg" alt="Imagen 3"></div>
+      <div class="swiper-slide"><img src="assets/swiper/los-picapiedras-04.jpg" alt="Imagen 4"></div>
+      <div class="swiper-slide"><img src="assets/swiper/los-picapiedras-05.jpg" alt="Imagen 5"></div>
+    </div>
+
+<!-- Solo paginación vertical -->
+  <div class="swiper-pagination"></div>
+
+  </div>
+</section>
   <footer>
     <p>© 2025 Los Picapiedras</p>
   </footer>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper-home', {
+    loop: true,
+    autoplay: {
+      delay: 3500,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
+</script>
 </body>
 </html>

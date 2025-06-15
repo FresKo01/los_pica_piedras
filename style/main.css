@@ -72,3 +72,55 @@ body {
   margin-left: 0.8rem;
   font-size: 1.2rem;
 }
+
+/*swiper */
+.hero-swiper {
+  width: 100%;
+  height: 90vh;
+  max-height: 600px;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.swiper-home {
+  width: 100%;
+  height: 65vh;
+  max-height: 600px;
+  position: relative;
+}
+
+.swiper {
+  position: relative;
+}
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Paginación vertical */
+.swiper-pagination {
+  position: absolute;
+  top: 50%;
+  right: 30px; /* Ajustá este valor según cuánto quieras separarla del borde */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+  background: white;
+  width: 12px;
+  height: 12px;
+}

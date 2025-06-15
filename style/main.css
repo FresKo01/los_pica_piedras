@@ -3,17 +3,32 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
+/* Logo por defecto (horizontal) */
+.responsive-logo {
+  height: 50px;
+  content: url("../assets/logo_horizontal.png");
+}
+
+/* Cuando la pantalla es más angosta, cambia a vertical */
+@media (max-width: 768px) {
+  .responsive-logo {
+    content: url("../assets/logo_vertical.png");
+    height: 60px;
+  }
+}
+
 .navbar {
   background-color: white;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
+  padding: 3rem 2rem;
   position: sticky;
   top: 0;
   z-index: 1000;
+  font-family: "Nunito Sans", sans-serif;
+  text-transform: uppercase;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -27,7 +42,7 @@ body {
 }
 
 .logo img {
-  height: 50px;
+  height: 65px;
 }
 
 .logo span {
@@ -45,8 +60,9 @@ body {
 .nav-links a {
   text-decoration: none;
   color: black;
-  font-weight: 500;
+  font-weight: 600;
   position: relative;
+  font-size: 1.1rem;
 }
 
 .nav-links a:hover::after,
@@ -63,14 +79,15 @@ body {
 .btn-contacto {
   background: black;
   color: white !important;
-  padding: 0.4rem 0.8rem;
-  border-radius: 4px;
+  padding: 0.6rem 2rem;
+  border-radius: 10px;
+  font-size: 1rem;
 }
 
 .social a {
   color: black;
-  margin-left: 0.8rem;
-  font-size: 1.2rem;
+  margin-left: 1rem;
+  font-size: 1.5rem;
 }
 
 /*swiper */
@@ -123,4 +140,16 @@ body {
   background: white;
   width: 12px;
   height: 12px;
+}
+
+/* Franja de texto debajo del menú */
+.slogan {
+  background-color: white;
+  color: #444;
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 6px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  font-style: italic;
 }

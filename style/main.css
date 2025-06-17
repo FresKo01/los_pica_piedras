@@ -153,3 +153,122 @@ body {
   border-bottom: 1px solid #eee;
   font-style: italic;
 }
+
+/*SERVICIOS*/
+.servicios {
+  padding: 4rem 1rem;
+  background-color: white;
+  color: #111;
+}
+
+.servicios .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.breadcrumb-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 0; /* Asegura que quede bien alineado */
+  display: block;
+}
+
+.breadcrumb-link {
+  color: #a67c52;
+  text-decoration: none;
+  padding: 2px 8px;
+  border-radius: 4px;
+  transition: background 0.2s;
+  font-weight: 600;
+}
+
+.breadcrumb-link:hover {
+  background: #f3e7d7;
+  text-decoration: underline;
+}
+
+.breadcrumb-current {
+  color: #a67c52;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background: #f8f5f2;
+}
+
+.breadcrumb {
+  margin: 0.5rem 0 1.5rem 0; /* margen arriba pequeño, abajo igual */
+  font-size: 0.95rem;
+  color: #a67c52;
+  text-align: left;
+}
+
+.titulo-servicio {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitulo-servicio {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.descripcion-servicio {
+  font-size: 1rem;
+  max-width: 800px;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.bloques-servicio .bloque {
+  display: flex;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-bottom: 3rem;
+}
+
+.bloques-servicio .bloque-texto {
+  flex: 1 1 0;
+  max-width: 65%;
+}
+
+.bloques-servicio .bloque img {
+  width: 30%;
+  min-width: 220px;
+  border-radius: 15px;
+  object-fit: cover;
+  max-height: 320px;
+  flex-shrink: 0;
+}
+
+.bloques-servicio .bloque-texto h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem !important;
+  line-height: 1.1;
+}
+
+.bloques-servicio .bloque-texto h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.2rem !important;
+  margin-bottom: 2.5rem;
+}
+
+.bloques-servicio .bloque-texto p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .bloques-servicio .bloque-texto,
+  .bloques-servicio .bloque img {
+    max-width: 100%;
+    /* width: 100%; */ /* Elimina o comenta esta línea */
+  }
+  .bloques-servicio .bloque img {
+    max-height: 220px;
+    width: 40%; /* O el tamaño que prefieras en móvil */
+  }
+}

@@ -1,3 +1,7 @@
+body {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
 /*SERVICIOS*/
 .servicios {
   padding: 4rem 1rem;
@@ -6,7 +10,7 @@
 }
 
 .servicios .container {
-  max-width: 1200px;
+  max-width: 1650px;
   margin: 0 auto;
 }
 
@@ -47,14 +51,15 @@
 }
 
 .titulo-servicio {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
 }
 
 .subtitulo-servicio {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
 }
 
 .descripcion-servicio {
@@ -64,22 +69,33 @@
   line-height: 1.6;
 }
 
+/*
 .bloques-servicio .bloque {
   display: flex;
   align-items: flex-start;
   gap: 3rem;
   margin-bottom: 3rem;
 }
+*/
+
+.bloques-servicio .bloque {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  gap: 4rem; 
+  margin-bottom: 3rem;
+  max-width: 1800px;
+}
 
 .bloques-servicio .bloque-texto {
-  flex: 1 1 0;
-  max-width: 65%;
+  flex: 1;
+  max-width: 60%;
 }
 
 .bloques-servicio .bloque img {
-  width: 30%;
-  min-width: 220px;
-  border-radius: 15px;
+  width: 35%;
+  min-width: 340px;
+  border-radius: 12px;
   object-fit: cover;
   max-height: 320px;
   flex-shrink: 0;
@@ -117,3 +133,59 @@
   }
 }
 
+/* SERVICIO 2 */
+.bloque-servicio-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  max-width: 1650px;
+  margin-inline: auto; /* centrar */
+}
+
+.texto-servicio-2 {
+  flex: 1;
+  max-width: 60%;
+}
+
+.texto-servicio-2 h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem !important;
+  line-height: 1.1;
+}
+
+.texto-servicio-2 p {
+  font-size: 1.25rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.imagen-servicio-2 {
+  width: 35%;
+  min-width: 340px;
+  border-radius: 12px;
+  object-fit: cover;
+  max-height: 320px;
+  flex-shrink: 0;
+}
+
+/* Responsive bloque 2*/
+@media (max-width: 900px) {
+  .bloque-servicio-2 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .texto-servicio-2 {
+    max-width: 100%;
+  }
+
+  .imagen-servicio-2 {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin-top: 1rem;
+  }
+}

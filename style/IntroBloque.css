@@ -3,41 +3,44 @@
   display: flex;
   align-items: center;
   gap: 3rem;
-  margin: 4rem auto 0 auto;
-  max-width: 1600px;
-  padding: 0 2rem;
+  margin-top: 6rem; /* Aumenta el espacio superior */
+  padding: 0;
+  width: 100%;
 }
 
 .intro-texto {
-  flex: 1.2;
+  flex: 1.1;
   max-width: 700px;
 }
 
 .intro-texto h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
   line-height: 1.1;
 }
 
 .intro-texto p {
-  font-size: 1.15rem;
+  font-size: 1rem;
   margin-bottom: 1.1rem;
   line-height: 1.7;
 }
 
 .intro-imagen {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: flex-end;
+  align-self: flex-end; /* Alinea la imagen al borde derecho */
+  margin-right: -5.6vw;
 }
 
 .intro-imagen img {
   width: 100%;
-  max-width: 520px;
+  max-width: 800px;
+  min-width: 400px;
   border-radius: 18px;
-  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
   object-fit: cover;
+  margin-right: 0; /* Asegura que no haya margen derecho */
 }
 
 /* Responsive */

@@ -136,12 +136,13 @@ body {
 /* SERVICIO 2 */
 .bloque-servicio-2 {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
   margin-bottom: 3rem;
   max-width: 1650px;
-  margin-inline: auto; /* centrar */
+  margin: 2rem 0;
 }
 
 .texto-servicio-2 {

@@ -1,0 +1,56 @@
+/* Intro bloque estructura */
+.intro-bloque {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin: 4rem auto 0 auto;
+  max-width: 1600px;
+  padding: 0 2rem;
+}
+
+.intro-texto {
+  flex: 1.2;
+  max-width: 700px;
+}
+
+.intro-texto h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.intro-texto p {
+  font-size: 1.15rem;
+  margin-bottom: 1.1rem;
+  line-height: 1.7;
+}
+
+.intro-imagen {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.intro-imagen img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .intro-bloque {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1rem;
+  }
+  .intro-imagen {
+    justify-content: center;
+  }
+  .intro-imagen img {
+    max-width: 100%;
+  }
+}

@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="style/footer.css">
   <link rel="stylesheet" href="style/servicios.css">
   <link rel="stylesheet" href="style/header.css">
+  <link rel="stylesheet" href="style/IntroBloque.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
   <link rel="icon" type="image/svg+xml" href="assets/icons/logo_main.svg">
@@ -65,6 +66,27 @@
 <section class="home-titulo">
   <h1>Trabajos de piedras natural. Revestimiento de paredes con piedra natural.</h1>
   <p class="home-subtitulo">Expertos en todo tipo de trabajos de piedra.</p>
+</section>
+
+<section class="intro-bloque container">
+  <div class="intro-texto">
+    <h2>Somos expertos en trabajos de revestimiento de paredes con piedra natural, pavimentaciones y más.</h2>
+    <p>
+      Ubicados en Torrent, Valencia, somos un equipo de expertos en <strong>revestimiento con piedra natural</strong>, formado por <span style="color:#a67c52;">canteros</span> y artesanos con décadas de experiencia. Nos apasiona transformar este noble material en estructuras y espacios únicos, combinando tradición y maestría para resaltar su belleza, resistencia y durabilidad.
+    </p>
+    <p>
+      Además, estamos profundamente comprometidos con la sostenibilidad y el respeto por el medio ambiente, reflejando en cada proyecto no solo nuestro talento, sino también nuestro amor por el oficio.
+    </p>
+    <p>
+      En Los Picapiedras, somos especialistas en el <strong>revestimiento con piedra natural</strong>, paredes de piedra natural decorativa, revestimientos decorativos en piedra, una solución estética, duradera y ecológica que aporta carácter y distinción a cualquier espacio. <strong>Trabajamos con materiales 100% naturales</strong> y ofrecemos <strong>acabados únicos</strong> que combinan tradición y diseño contemporáneo.
+    </p>
+    <p>
+      Ya sea en viviendas particulares, negocios o espacios públicos, nuestros revestimientos en piedra natural se adaptan a todo tipo de estilos y necesidades. Apostamos por la calidad, el detalle y una instalación profesional que garantiza resultados impecables.
+    </p>
+  </div>
+  <div class="intro-imagen">
+    <img src="assets/swiper/los-picapiedras-03.jpg" alt="Revestimiento de piedra natural">
+  </div>
 </section>
 
 <!-- Ícono flotante de WhatsApp -->
@@ -122,23 +144,9 @@
       © <span id="year"></span> Los Picapiedras.
     </div>
   </footer>
+  
 <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-<script>
-  const swiper = new Swiper('.swiper-home', {
-    loop: true,
-    autoplay: {
-      delay: 3500,
-      disableOnInteraction: false,
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-  });
-</script>
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
+<script src="js/main.js"></script>
 
 </body>
 </html>

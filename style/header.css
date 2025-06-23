@@ -31,7 +31,7 @@ nav {
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 1.2rem;
+  gap: 1.5rem;
   align-items: center;
   justify-content: center;
 }
@@ -55,6 +55,58 @@ nav {
   left: 0;
 }
 
+/* Oculta el botón en escritorio */
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  gap: 6px;
+  margin-left: 1rem;
+  z-index: 1001;
+}
+
+.nav-toggle span {
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: #111;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+
+/* Responsive: muestra el botón y oculta el menú */
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+  }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 24px;
+    background: #fff;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border-radius: 12px;
+    padding: 1.5rem 2rem;
+    z-index: 1000;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+}
+
 .header-right {
   display: flex;
   align-items: center;
@@ -69,7 +121,7 @@ nav {
 }
 
 .container {
-  max-width: 1650px;
+  max-width: max-content;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -116,7 +168,7 @@ nav {
   letter-spacing: 0.02em;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 800px) {
   .header-right-text {
     display: none;
   }

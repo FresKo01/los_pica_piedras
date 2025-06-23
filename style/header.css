@@ -125,17 +125,11 @@ nav {
   }
 }
 
-.header-right {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
 .social {
   display: flex;
   align-items: center;
-  gap: 2rem;
-  margin-left: 0rem;
+  gap: 1rem;
+  margin-left: 1rem;
 }
 
 
@@ -173,10 +167,4 @@ nav {
   font-size: 1.5rem;
 }
 
-.header-right-text {
-  font-size: 0.60rem;
-  color: #222;
-  white-space: nowrap;
-  font-weight: 600;
-  letter-spacing: 0.02em;
-}
+

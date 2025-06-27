@@ -46,60 +46,10 @@
     <span class="breadcrumb-current">Servicios</span>
   </div>
 </div>
-<section class="servicios">
-  <div class="container">
-    <div class="bloques-servicio">
-      <div class="bloque">
-        <div class="bloque-texto">
-          <h1>
-            Servicios
-          </h1>
-          <h4> 
-            Clientes residenciales y comerciales.
-          </h4>
-          <p> 
-            Ofrecemos a propietarios de viviendas, constructores, desarrolladores, arquitectos, paisajistas y diseñadores 
-            de interiores una selección de productos de piedra y roca natural, 
-            junto con servicios de colocación de piedra natural en paredes, contratación, 
-            todo entregado con el más alto nivel de profesionalismo.
-          </p>
-        </div>
-        <img src="../assets/servicios/servicio1.jpg" alt="Servicio 1">
-      </div>
-    </div>
-  </div>
-</section>
 
+<main id="servicios-dinamicos"></main>
 
-<div class="container">
-  <div class="bloque-servicio-2">
-    <img src="../assets/servicios/servicio2.jpg" alt="Servicio 2" class="imagen-servicio-2">
-    <div class="texto-servicio-2">
-      <h1>Revestimiento de piedras.</h1>
-      <p>
-        Somos fabricantes, proveedores e instaladores de revestimientos de piedra natural.
-        Estos revestimientos ofrecen una forma más asequible de lograr la belleza y el estilo atemporales que solo la piedra natural puede brindar, 
-        al mismo tiempo que añaden una capa protectora a su estructura, mejoran su resistencia al desgaste y aumentan el aislamiento.
-      </p>
-    </div>  
-  </div>
-</div>
-
-<div class="container">
-  <div class="bloque-servicio-3">
-    <img src="../assets/servicios/servicio3.jpg" alt="Servicio 3" class="imagen-servicio-3">
-    <div class="texto-servicio-3">
-      <h1>Revestimiento de piedras.</h1>
-      <p>
-        Somos fabricantes, proveedores e instaladores de revestimientos de piedra natural.
-        Estos revestimientos ofrecen una forma más asequible de lograr la belleza y el estilo atemporales que solo la piedra natural puede brindar, 
-        al mismo tiempo que añaden una capa protectora a su estructura, mejoran su resistencia al desgaste y aumentan el aislamiento.
-      </p>
-    </div>  
-  </div>
-</div>
-
- <!--footer-->
+<!--footer-->
 <footer class="footer">
   <div class="footer-container">
     <!-- Columna 1: Descripción -->
@@ -122,7 +72,7 @@
         <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
-    </div>
+</div>
 
     <!-- Columna 3: Legales -->
     <div class="footer-col">
@@ -148,10 +98,8 @@
   </div>
 </footer>
 
-<script>
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+<script src="../js/servicios-data.js"></script>
+<script src="../js/render-servicios.js"></script>
 
 </body>
 </html>

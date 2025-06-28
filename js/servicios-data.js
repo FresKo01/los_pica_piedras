@@ -32,6 +32,5 @@ const serviciosData = [
     descripcion: `Ofrecemos servicios de construcción y renovación con piedra natural maciza. Somos expertos en el arte de la edificación y la construcción en seco.`,
     imagen: "../assets/servicios/servicio4.jpg",
     layout: "imagen-texto"
-    
   }
 ];

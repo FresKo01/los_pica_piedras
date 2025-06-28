@@ -85,13 +85,19 @@ nav {
 
 /* Cuando la pantalla es más angosta, cambia a vertical */
 /* Responsive: muestra el botón y oculta el menú */
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  nav {
+  flex: 2 1 0%;
+  display: flex;
+  justify-content: center;
+      padding-top: 10px;
+}
   .nav-toggle {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 24px;
     right: 24px;
+    margin-bottom: 10px;
   }
   .nav-links {
     display: none;

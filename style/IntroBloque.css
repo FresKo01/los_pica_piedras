@@ -12,7 +12,7 @@
 .intro-texto {
   flex: 1.1;
   max-width: 35%;
-  margin-left: 120px;
+  margin-left: 80px;
 }
 
 .intro-texto h2 {
@@ -103,6 +103,10 @@
     width: 40%;
     height: 60%;
   }
+  .intro-texto {
+    margin-left: 80px;
+    margin-top: 2rem;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -123,7 +127,7 @@
     max-width: 700px;
     margin-left: 0;
     margin-top: 2rem;
-    /* background-color: red; */
+  
   }
 }
 

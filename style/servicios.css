@@ -5,8 +5,8 @@ body {
 /*SERVICIOS*/
 .servicios {
   padding: 4rem 1rem;
-  background-color: white;
-  color: #111;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
 }
 
 .servicios .container {

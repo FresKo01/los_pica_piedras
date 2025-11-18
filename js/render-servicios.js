@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `;
     } else if (servicio.layout === 'imagen-texto') {
       allServicesHTML += `
+      <section class="servicios">
         <div class="container">
           <div class="bloque-servicio-2">
             <img src="${servicio.imagen}" alt="${servicio.alt}" class="imagen-servicio-2">
@@ -41,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>  
           </div>
         </div>
+        </section>
       `;
     }
   });
